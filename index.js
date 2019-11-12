@@ -191,8 +191,13 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
+function getFullNames(runners) {
   /* CODE HERE */
+  let names = [];
+  runners.forEach(function(items){
+  return names.push(`${items.last_name}, ${items.first_name}`);
+  })
+  return names
 }
 
 /**
@@ -207,9 +212,15 @@ function getFullNames(/* CODE HERE */) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
+function firstNamesAllCaps(runners) {
   /* CODE HERE */
+  const caps = runners.map(function(toCaps){
+    return toCaps.first_name.toUpperCase();
+  });
 }
+
+
+
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
