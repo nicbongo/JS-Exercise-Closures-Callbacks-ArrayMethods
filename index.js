@@ -146,9 +146,8 @@ function processProduct(num1, num2, callback) {
 */
 function processContains(item, list, cb) {
   /* CODE HERE */
- 
-
-
+  const result = list.includes(item);
+  return cb(result)
 }
 
 /**
