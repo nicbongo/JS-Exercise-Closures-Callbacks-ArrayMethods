@@ -95,7 +95,10 @@ function processLastItem(stringList, callback) {
 */
 function processSum(numberList, callback) {
   /* CODE HERE */
-  return callback(numberList)
+  const sum = numberList.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue
+  }, 0);
+  return callback(sum)
 }
 
 /**
