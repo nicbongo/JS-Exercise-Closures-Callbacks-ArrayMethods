@@ -133,8 +133,13 @@ function processProduct(/* CODE HERE */) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
+function processContains(item, list, cb) {
   /* CODE HERE */
+  this.item = item,
+  this.list = list,
+  this.cb = cb
+
+
 }
 
 /**
