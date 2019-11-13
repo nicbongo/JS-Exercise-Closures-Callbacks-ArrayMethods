@@ -308,8 +308,14 @@ function counterMaker() {
  * counter() // should return 0
  * etc
 */
-function counterMakerWithLimit(/* CODE HERE */) {
+function counterMakerWithLimit(maxVal) {
   /* CODE HERE */
+  
+  let count = 0;
+  function counter(maxVal) {
+    return count ++
+  }
+  return counter
 }
 
 /////////////// END OF CHALLENGE ///////////////
