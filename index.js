@@ -312,11 +312,14 @@ function counterMakerWithLimit(maxVal) {
   /* CODE HERE */
   
   let count = 0;
-  function counter(maxVal) {
-    return count ++
-  }
-  return counter
+  return function () {
+    if (count > maxVal) {
+      count = 0; 
+    }    
+      return count ++
+    }    
 }
+
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
